@@ -51,7 +51,8 @@ for(var i=0; i<9; i++){
     
     var button = document.createElement("button");
     button.setAttribute("class","saveBtn");
-    button.innerHTML = '<i class="fa-regular fa-lock"></i>';
+    button.innerHTML = '<i class="fas fa-lock"></i>'
+
     row.appendChild(button);
     
     var currentTime = checkTime ()
@@ -60,6 +61,7 @@ for(var i=0; i<9; i++){
     if (t < currentTime) {
         input.style.backgroundColor = "gray"
         input.disabled = true
+        button.disabled = true
     }
     else if (t == currentTime) {
         input.style.backgroundColor = "red"
